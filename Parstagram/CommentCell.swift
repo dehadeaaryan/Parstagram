@@ -1,23 +1,20 @@
 //
-//  PostCell.swift
+//  CommentCell.swift
 //  Parstagram
 //
-//  Created by Aaryan Dehade on 10/15/21.
+//  Created by Aaryan Dehade on 10/20/21.
 //
 
 import UIKit
 
-class PostCell: UITableViewCell {
+class CommentCell: UITableViewCell {
 
-    @IBOutlet weak var photoView: UIImageView!
-    @IBOutlet weak var usernameLabel: UILabel!
-    @IBOutlet weak var captionLabel: UILabel!
+    @IBOutlet weak var authorLabel: UILabel!
+    @IBOutlet weak var commentLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        
-        photoView.layer.cornerRadius = 10
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
